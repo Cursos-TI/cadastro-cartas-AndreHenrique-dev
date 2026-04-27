@@ -116,15 +116,16 @@ int main() {
   //Comparando as cartas
 
   printf("\nComparando cartas...\n\n-------CARTA 1 VS CARTA 2-------\n");
-
-  printf("População: Carta 1 venceu: (%d)\n", populacao1>populacao2);
-  printf("Área: Carta 1 venceu: (%d)\n",area1>area2);
-  printf("PIB: Carta 1 venceu: (%d)\n",pib1>pib2);
-  printf("Pontos túristicos:  Carta 1 venceu: (%d)\n",turismo1>turismo2);
-  printf("Densidade Popular: Carta 2 venceu: (%d)\n",DensPop1<DensPop2);
-  printf("PIB Per Capta: Carta 1 venceu (%d)\n", PibPerCapita1>PibPerCapita2);
-  printf("Super Poder: Carta 1 venceu (%d)\n\n", PoderCarta1>PoderCarta2);
-  printf("OBS: (1) = Sim; (2) = Não");
-
+  printf("Atributo: Densidade Populacional\n");
+  printf("Carta 1: %.7f\n",DensPop1);
+  printf("Carta 2: %.7f\n",DensPop2);
+  
+  //Comparando atributos em casa de vitoria/derrota.
+  if(DensPop1<DensPop2){
+    printf("Carta 1 venceu!");
+  }else{
+    printf("Carta 2 venceu!");
+  }
+  
   return 0;
 } 
